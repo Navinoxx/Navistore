@@ -1,0 +1,31 @@
+$night: #0b090aff;
+$eerie-black: #161a1dff;
+$blood-red: #660708ff;
+$cornell-red: #a4161aff;
+$imperial-red: #e5383bff;
+$silver: #b1a7a6ff;
+$timberwolf: #d3d3d3ff;
+$white: #ffffffff;
+$blue: #0a8cf0;
+
+// Create your own map
+$custom-colors: (
+  "night":          $night,
+  "eerie-black":    $eerie-black,
+  "blood-red":      $blood-red,
+  "cornell-red":    $cornell-red,
+  "imperial-red":   $imperial-red,
+  "silver-surf":    $silver,
+  "timberwolf":     $timberwolf,
+  "white-full":     $white,
+  "blue":           $blue,
+);
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+

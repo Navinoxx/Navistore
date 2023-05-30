@@ -1,0 +1,12 @@
+@import "../colores";
+
+.main {
+
+    .form-control::placeholder {
+        color: $silver;
+    }
+
+    .btn-link {
+        width: 5rem;
+    }
+}

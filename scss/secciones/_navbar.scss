@@ -1,0 +1,112 @@
+@import "../colores";
+@import "../componentes/button";
+
+.navbar {
+
+    .container-fluid {
+
+        .dropdown {
+            color: $eerie-black;
+            font-size: 1.2em;
+
+            &-menu {
+                border-radius: 0;
+                translate: 0% 0.5%;
+
+                .dropdown-item:hover {
+                    color: $imperial-red;
+                }
+
+                @media screen and (max-width: 991px) {
+                    translate: 0% 2.7%;
+                }
+            }
+        }
+
+        .navbar-brand {
+
+            .logo-name {
+                font-size: 3.9em;
+                font-family: var(--tipo-principal);
+
+                .letter:hover {
+                    display: inline-block;
+                    animation: rotar 2s;
+                }
+
+                @keyframes rotar {
+                    0% {
+                        transform: rotateY(0deg);
+                    }
+                    50% {
+                        transform: rotateY(180deg);
+                    }
+                    100% {
+                        transform: rotateY(360deg);
+                    }
+                }
+
+                @media screen and (max-width: 991px) {
+                    margin: 0;
+                    font-size: 2em;
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .sesion {
+            font-size: 0.8em;
+
+            .text-imperial-red:hover {
+                color: $night !important;
+            }
+
+            @media screen and (max-width: 1199px)  {
+                width: 35%;
+            }
+
+            @media screen and (max-width: 1399px)  {
+                padding-right: 0.5rem;
+            }
+
+            @media screen and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: 992px)  {
+                border-right: 1px solid $eerie-black;  
+            }
+
+            @media screen and (max-width: 426px)  {
+                width: 55%;
+            }
+        }
+
+        .bg-white-full {
+            width: 2.5rem;
+            padding: 0.5rem;
+
+            .bi-heart-fill {
+                pointer-events: stroke;
+            }
+
+            .badge {
+                position: absolute;
+                bottom: 70%;
+                right: 0;
+                border-radius: 43%;
+
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .nav-link:hover {
+        color: $night;
+    }
+}

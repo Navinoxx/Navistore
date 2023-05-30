@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../js/main.js"></script>  
+</head>
+<body>
+    <header class="bg-timberwolf">
+        <nav class="filtro navbar navbar-expand-lg bg-body-tertiary flex-column p-0 container">
+            <div class="container-fluid bg-timberwolf gap-3">
+                <a class="navbar-brand" href="../index.html" title="Inicio">
+                    <h1 class="logo-name"><b class="letter text-imperial-red">N</b>avi<b class="letter text-imperial-red">S</b>tore</h1>
+                </a>              
+                <form action="principal.html" class="buscador d-flex input-group" role="search">
+                    <input id="input" class="form-control" type="search" placeholder="Encontrá lo que buscás" aria-label="Search">
+                    <button class="btn btn-secondary input-group-text" type="submit">Buscar</button>
+                </form>
+                <div class="sesion d-flex flex-wrap">
+                    <div>                      
+                        <b class="fw-bold">Hola,</b> Inicia tu sesión</div>
+                    <div>
+                        <a href="login.html" data-test-common="login_register_button" title="login" class="text-imperial-red">Ingresá  |  Registrate</a>
+                    </div>
+                </div>
+                <div class="d-flex gap-2">
+                    <div class="bg-white-full rounded text-cornell-red">                      
+                        <a href="principal.html" title="favoritos">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                        </a>
+                    </div>    
+                    <div class="bg-white-full rounded bg-blue text-white">
+                        <a href="principal.html" title="compras">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="container-fluid bg-timberwolf">
+                <div class="dropdown">
+                    <button type="button" class="dropdown-toggle pe-3 fw-bold text-imperial-red" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Categorias</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" role="button" href="principal.html">Todos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="smartphones">Smartphones</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="laptops">Laptops</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="fragrances">Fragances</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="skincare">Skincare</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="groceries">Groceries</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="home-decoration">Home-decoration</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="furniture">Furniture</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="tops">Tops</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="womens-dresses">Dresses</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="womens-bags">Bags</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="womens-jewellery">Jewellery</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="mens-shirts">Shirts</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="womens-shoes">Women Shoes</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="mens-shoes">Men Shoes</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="womens-watches">Women Watches</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="mens-watches">Men Watches</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="sunglasses">Sunglasses</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="automotive">Automotive</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="motorcycle">Motorcycle</a></li>
+                        <li><a class="dropdown-item" role="button" href="principal.html" title="lighting">Lighting</a></li>
+                    </ul>
+                </div>       
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-3 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" role="button" href="principal.html" title="Destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="button" href="principal.html" title="Lo mas buscado">Lo mas buscado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="button" href="principal.html" title="Superofertas">Superofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="button" href="principal.html" title="Liquidaciones">Liquidaciones</a>
+                        </li>
+                    </ul>
+                </div>               
+            </div>   
+        </nav>   
+    </header>
+    <main>
+        <section class="container my-5">
+            <h2 class="fw-bold display-5 pb-5">Términos y condiciones</h2>
+            <article class="pb-3">
+                <h3 class="fw-bold">POLITICAS DE PRIVACIDAD</h3>
+                <p>
+                    El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326.
+                    La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.
+                    Para contactar a la Dirección Nacional de Protección de Datos Personales: Sarmiento 1118, 5º piso (C1041AAX). Tel: 4383-8510/12/13/15.
+                </p>
+                <a href="http://www.argentina.gob.ar/aaip/datospersonales" target="_blank" title="argentina.gob" rel="noopener"></a>
+                <a href="http://infodnpdp@just.gov.ar" target="_blank" title="infodnpdp" rel="noopener"></a>
+            </article>
+            <article class="pb-3">
+                <h3 class="fw-bold">PROTECCIÓN DE DATOS PERSONALES</h3>
+                <p>
+                    En virtud de lo establecido por la disposición nro. 4 de la DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES y de los arts. 27, inc. 3 de la ley 25.326 y 27, párrafo 3ro. del decreto 1558/01, referidos a las bases de datos con fines de publicidad, le informamos que usted tiene derecho al retiro o bloqueo, total o parcial, de su nombre de esta base de datos, lo que podrá hacer enviando su decisión en tal sentido utilizando el link “DESUSCRIBIRME” al pie de todas nuestras comunicaciones vía email, o al teléfono (011) 4588-7000, o la dirección Juncal 1126 piso 6º frente, Ciudad Autónoma de Buenos Aires, en este sitio, o de cualquier otra forma que permita una notificación expresa y que permita dejar constancia de la misma en tal sentido. Los mencionados artículos expresan lo siguiente: ley 25.326 art. 27 inciso 3ro.: el titular podrá, en cualquier momento, solicitar el retiro o bloqueo de su nombre de los bancos de datos a los que se refiere el presente artículo -decreto 1158/01 art. 27 párrafo 3ro.: en toda comunicación con fines de publicidad que se realice por correo, teléfono, correo electrónico, internet u otro medio a distancia a conocer, se deberá indicar, en forma expresa y destacada, la posibilidad del titular del dato de solicitar el retiro o bloqueo, total o parcial, de su nombre de la base de datos. A pedido del interesado, se deberá informar el nombre del responsable o usuario del banco de datos que proveyó la información. La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, órgano de control de la ley nro. 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan en relación a incumplimiento de las normas sobre protección de datos personales. NaviStore S.A.I.C.e.I.: Juncal 1126 piso 6º frente, Ciudad Autónoma de Buenos Aires, C.U.I.T.: 30-54008821-3. Centro de Atención al Cliente: 0810-444-0018.
+                </p>
+            </article>
+            <article class="pb-3">
+                <h3 class="fw-bold">FORMA DE ENTREGA Y PAGO</h3>
+                <p>
+                    A continuación se incluyen las condiciones generales de utilización de los servicios ofrecidos en el Sitio (el “Servicio” y las “Condiciones de Uso” respectivamente) que regirán los derechos y obligaciones entre los usuarios (los “Usuarios” y/o el “Usuario”) y NaviStore. NaviStore recomienda especialmente guardar una copia impresa de las Condiciones de Uso Al ingresar en el Sitio, el Usuario declara saber, conocer y aceptar las presentes Condiciones de Uso. Las Condiciones de Uso, así como sus modificaciones, estarán vigentes en forma inmediata a su publicación en el Sitio. La utilización del Sitio implica el conocimiento y la aceptación plena por parte del Usuario de las Condiciones de Uso. En caso de no aceptar en las Condiciones de Uso o cualquier cambio o modificación de las mismas no deberá continuar utilizando el Sitio. Naturaleza del Servicio y destino del Sitio. El Sitio ha sido programado para que constituya un medio virtual para el acceso de los Usuarios a las góndolas de la tienda de NaviStore del área de su domicilio. Usuarios que pueden utilizar los Servicios del Sitio. Los Servicios sólo están disponibles para personas que tengan capacidad legal para contratar. No podrán utilizar los Servicios las personas que no tengan esa capacidad, los menores de edad o quien registre como Usuario una persona jurídica, deberá tener capacidad para contratar a nombre de tal entidad y de obligar a la misma en los términos de estas Condiciones de Uso. Uso de los Servicios.
+                    El Usuario, ya sea registrado o “invitado”, declara que la información que brindará al remitir el pedido de registración será precisa, correcta y actual comprometiéndose a informar en forma inmediata y fehaciente respecto de cualquier cambio siendo a su vez enteramente responsable frente a NaviStore por los daños y perjuicios que el incumplimiento de dicha obligación pudiere acarrearle incluyendo pero no limitándose a costos de ubicación física del Usuario, costos de intimaciones y citaciones, etc. El Usuario acepta que utilizará los Servicios exclusivamente con los fines estipulados en (a) las Condiciones de Uso y (b) cualquier norma o regulación aplicable ya sea de índole municipal, provincial o nacional incluyendo pero no limitándose a leyes, decretos, ordenanzas, resoluciones, directivas, etc. El Usuario se compromete a no divulgar su contraseña a terceros que no estuvieren autorizados por el Usuario para acceder a los Servicios del Sitio. Ámbito de aplicación. Estas Condiciones de Uso son aplicables a cualquiera de todas las ventas de productos y/o servicios a ser realizadas por NaviStore dentro de la República Argentina. La realización de un pedido supone la aceptación expresa del Usuario a las presentes Condiciones de Uso. Al aceptar estas Condiciones de Uso, registrándose como Usuario o ingresando como “invitado”, usted declara bajo juramento y certifica tener 18 años de edad o más. Si usted no está de acuerdo (o no puede cumplir) con cualquiera de las reglas de las Condiciones de Uso, no utilice el Sitio. Toda la información proporcionada al momento de operar con el Sitio debe ser precisa y veraz. Proporcionar información inexacta o falsa constituye una violación grave de estas Condiciones de Uso. Confirmando su pedido en el final del proceso de una operación, el Usuario acuerda aceptar los artículos adquiridos y pagar su precio, perfeccionando con NaviStore un contrato de compra-venta de mercadería. Referencias a terceros.
+                    Las referencias en el Sitio a nombres, marcas, productos o servicios de terceros, o vínculos de hipertexto a sitios Web o información de terceros se proveen únicamente como una comodidad para el Usuario y de ninguna forma constituyen o implican respaldo, patrocinio o recomendación por NaviStore respecto de la tercera parte, su información, productos o servicios. NaviStore no tiene control de las prácticas o políticas de esos terceros, ni del contenido de los sitios Web de cualesquiera terceros y no hace ninguna declaración o promesa con respecto a productos o servicios de terceros, o respecto del contenido o la exactitud de cualquier material alojado en dichos sitios de terceros. Si el Usuario decide navegar o seguir un vínculo hacia cualquiera de tales sitios Web de terceros, lo hace enteramente bajo su propio riesgo y responsabilidad. Orden de compra correspondiente a cada pedido. El Usuario deberá formular su pedido de la misma forma en que llena su carrito en nuestras tiendas, o sea recorriendo virtualmente las góndolas de la tienda, escogiendo las mercaderías que desea comprar e indicando respecto de cada ítem la cantidad que desea comprar. El procedimiento del Sitio le da oportunidad de añadir o quitar ítems del pedido, de anularlo por completo y de revisarlo. Pueden existir mínimos o máximos en la cantidad, volumen o precio de los ítems incluidos en una orden de compra. Todos los precios publicados en el sitio son precios exclusivos para la compra online de los productos y podrán diferir o ser idénticos a los precios publicados en el resto de las sucursales según el caso. Aceptación de pedidos.
+                    Por favor, tenga en cuenta que puede ocurrir que luego de aprobado por el Usuario un pedido, por distintas razones NaviStore no esté en condiciones de aceptarlo total o parcialmente y deba por ello cancelar o excluir del mismo algunos ítems pedidos por el Usuario. Algunas situaciones pueden dar lugar a que algunos ítems de su pedido sean excluidos del mismo, ya sea debido a limitaciones en las cantidades disponibles para la compra; faltantes de mercadería en la respectiva góndola; falta de autorización a la operación por parte de la entidad emisora o administradora de su tarjeta de crédito; inexactitudes o errores en el producto o información; o problemas identificados por el departamento de prevención de fraude de crédito y de precios. Para su seguridad, le informamos que eventualmente podemos requerirle información o realizar verificaciones adicionales antes de aceptar cualquier pedido. Si se cancela todo o parte de su pedido o si se necesita información adicional para aceptar su pedido, nos pondremos en contacto con usted. En todos los casos que deban realizarse una modificación o cancelación parcial de su pedido, el Usuario tendrá siempre derecho a cancelar la totalidad del mismo. NaviStore, en uso de sus facultades, se reserva el derecho de anular definitivamente cualquier operación luego de la constatación de los datos ingresados, en cuyo caso se le comunicará al usuario la decisión. Todas las compras efectuadas estarán sujetas al stock informado, debido a las demoras propias de las actualizaciones del sistema, es posible que el mismo le permita realizar una compra que luego deba ser anulada por falta de stock. En ese caso le será informado en el e-mail confirmatorio.
+                </p>
+            </article>
+            <article class="pb-3">
+                <h3 class="fw-bold">PRODUCTOS EN ESTADO DE PRUEBA</h3>
+                <p>
+                    Una vez que un pedido haya quedado confirmado y el importe de su factura aprobado, salvo que existan inconvenientes excepcionales para la aceptación del pedido por parte de NaviStore, que le serán debidamente comunicados, recibirá un correo electrónico en el plazo de las 24 horas confirmando que la operación ha sido exitosa. Si el Usuario no recibe tal notificación vía correo electrónico deberá contactarse con el Centro de Atención al Cliente NaviStore a fin de constatar que no hubo errores de registro al ingresar la casilla de correo. Actualmente el Usuario dispone dos métodos de entrega de la mercadería: Envío a domicilio. Retira en Sucursal. Cuando el método de entrega seleccionado sea “Envío a domicilio”, la compra deberá ser recepcionada preferentemente por el titular del método de pago utilizado, o bien por una persona autorizada que cumpla con las Condiciones de Uso del Sitio. El Usuario podrá designar una persona autorizada a recibir la mercadería y/o servicio adquirido en el domicilio de entrega indicado únicamente para la modalidad “Envío a domicilio”. En todos los casos, para que la mercadería y/o servicio sea entregado, la persona que recepciona deberá exhibir su DNI. Al hacer la entrega del Producto, se le solicitará el DNI a fin de corroborar que sea el Titular o el Autorizado a recibirlo, adicionalmente, y con la sola finalidad de evitar posibles fraudes, el transportista/empleado podrá tomar con su Smartphone una fotografía del DNI* presentado. En el caso de operaciones de “Retira en Sucursal” deberá seguir los pasos que se detallan a continuación: Elija la sucursal de retiro. Recomendamos la más cercana a su domicilio. Recibirá, dentro de las siguientes setenta y dos (72) horas, un e-mail de confirmación indicando que ya puede retirar el pedido. Una vez que reciba el e-mail de confirmación de su compra y habilitación para retirar el/los producto/s adquirido/s, podrá dirigirse, dentro de los treinta (30) días corridos, a la sucursal que haya seleccionado, con el comprobante de la compra efectuada impreso o exhibido en su dispositivo móvil, y retirar su pedido. Cuando se presente en la sucursal, deberá dirigirse al sector de Cajas, donde deberá presentar: DNI* y tarjeta con la que realizó el pago (ambos en original). La entrega sólo se hará efectiva al titular del medio de pago, sin excepción. Mail de confirmación de compra, que incluye el número de pedido: NOTA: para operaciones de sábados, domingos y feriados de 17 a 22 Hs. los pedidos podrán ser retirados el día siguiente, una vez que reciba el e-mail de confirmación de su compra. En cualquiera de las modalidades de entrega, se le exhibirá al Usuario el estado de la mercadería y los accesorios que vienen con esta debiendo el Usuario (o la persona autorizada por este, en su caso) verificar que la mercadería entregada corresponde a los artículos incluidos en el pedido y en el remito que se le presentará en el acto de entrega. La firma del remito y/o la del comprobante de pago implicará declaración de conformidad con la mercadería entregada, sin perjuicio de los derechos que le pudieren corresponder en caso de que la misma resultara por algún motivo defectuosa. Costo del servicio de entrega a domicilio y casos de imposibilidad de entrega. El servicio de entrega a domicilio se encuentra habilitado en determinadas localidades del país, las cuales podrán ser consultadas durante el proceso de compra online, momento en el cual el Usuario procederá a seleccionar según su conveniencia. El servicio de entrega a domicilio se efectuará dentro de un margen mínimo de 72 horas (que podrá extenderse hasta 10 días hábiles en función de la ubicación del domicilio de entrega informado por el Usuario) y tendrá un costo, que aparecerá expresado y diferenciado en la etapa del proceso de llenado del carrito previa a la emisión de su pedido. Dicho costo se añadirá al de las mercaderías detalladas en la correspondiente factura electrónica. La confirmación del pedido y el pago realizado on line, implicarán la aceptación del Usuario del costo del servicio de entrega a domicilio y consecuentemente también el monto total de la correspondiente factura electrónica que recibirá en el e-mail registrado en el pedido. En todos los casos, la fecha de entrega será comunicada al Usuario en el e-mail que registró en el pedido. En caso de que en el día de entrega no encontremos en el domicilio un titular habilitado para la recepción (sea el Usuario y/o a la persona autorizada por este en su caso), se volverá a coordinar otra fecha de entrega para lo cual el cliente puede comunicarse al Centro de Atención al Cliente, 0810-444-0018. En caso de que por dificultades imprevistas NaviStore no pudiere cumplir con la entrega a domicilio, según los plazos por zona geográfica, se le comunicará en no más de cinco (5) días hábiles y se pactará la entrega de la mercadería para un nuevo día y horario a convenir, sin que se devengue por ello ningún cargo adicional para el Usuario. Cualquier plazo pactado de entrega informado es estimado, aclarándosele que pueden verificarse demoras en la entrega del producto derivadas de un sinnúmero de variables ajenas al control de NaviStore.
+                    *documento físico y en original.
+                </p>
+            </article>
+            <article class="pb-3">
+                <h3 class="fw-bold">MEDIOS DE PAGO</h3>
+                <p>
+                    El Sitio cuenta con los siguientes medios de pago válidos para compras online: - Visa, - Tarjeta Naranja, - Master Card, - American Express, - Cabal, - Mercado Pago. Es derecho de NaviStore la inclusión, exclusión o suspensión de cualquier medio de pago. Tipo de comprobantes a emitir. En venta on line, por el momento sólo se emitirán facturas electrónicas a Consumidor Final (Comprobantes tipo “B”). La misma será remitida al e-mail informado en el pedido, sin excepción. En caso de no recibirla, contactarse al Centro de Atención al Cliente al teléfono 0810-444-0018 para corroborar un posible error en la carga del e-mail en el pedido. Operatividad y Seguridad del Sitio. El Usuario se compromete a no acceder ni a intentar acceder al Sitio ni usar de ninguno de los Servicios por ningún otro medio que no sea la interfaz provista por NaviStore. Asimismo, se compromete a no involucrarse en ninguna actividad que interfiera o que interrumpa o que tuviere entidad suficiente para interferir o interrumpir la prestación de los Servicios del Sitio o los servidores y redes conectados al mismo. Está prohibido a los Usuarios violar, vulnerar y/o de cualquier forma afectar el normal uso y la seguridad del Sitio, incluyendo, pero sin limitarse a: a) acceder a datos que no se destinan a ese Usuario o ingresar a una computadora o a una cuenta a los cuales no esté el Usuario autorizado para acceder; b) tratar de sondear, analizar o probar la vulnerabilidad de un sistema o una red o romper medidas de seguridad o autenticación sin la debida autorización; c) intentar interferir con el servicio a cualquier Usuario, computadora o red, incluyendo, sin que la siguiente enumeración implique limitación, cuando se lo haga a través de medios de envío de un virus al Sitio, sobrecarga, inundación (“flooding”) envío masivo de mensajes no solicitados (“spamming”) envío de códigos destructivos (“mailbombing”) o anulación de instrucciones del software (“crashing”). Las violaciones de la seguridad del sistema o de la red pueden dar lugar a responsabilidad civil o penal. NaviStore investigará sucesos que puedan implicar esas violaciones y puede involucrar a cooperar con las autoridades encargadas de hacer cumplir la ley para enjuiciar a los usuarios que participen en esas violaciones. Usted acepta no utilizar ningún dispositivo, software o rutina para interferir o intentar interferir con el buen funcionamiento de este Sitio o cualquier actividad que se lleve a cabo en este Sitio. Usted acepta, además, no utilizar ni intentar utilizar cualquier motor, software, herramienta, agente u otro dispositivo o mecanismo (incluyendo sin limitación los navegadores, arañas (spyders), robots y avatares) para navegar o buscar en este Sitio, que no sean los motores de búsqueda y agentes de búsqueda que NaviStore hace disponibles en este Sitio y diferentes de los navegadores Web de terceros disponibles para el público en general (por ejemplo, Mozilla Firefox, Internet Explorer, Opera, Google Chrome, entre otros). El Usuario y/o el navegante ocasional del Sitio aceptan y reconocen expresamente que cualquier hecho, acto u omisión vinculadas con lo referido anteriormente y que tengan entidad para afectar la seguridad y/o el normal desarrollo del Sitio tienen entidad suficiente para causar a NaviStore considerables daños y perjuicios incluyendo pero no limitándose a lucro cesante por caída y/o merma en las ventas, afectación de sus marcas, imagen comercial, pérdida de clientela, etc. Contraseñas y seguridad de la cuenta del Usuario. Por medio de la aceptación de las Condiciones de Uso el Usuario, reconoce y acepta que es el único responsable de mantener la confidencialidad de su contraseña. En consecuencia, el Usuario acepta que será el único responsable ante NaviStore de todas y cada una de las actividades que se efectúen en su cuenta en el Sitio. El Usuario deberá notificar de inmediato a NaviStore cualquier uso no autorizado de su contraseña o cuenta de que tenga conocimiento, a través del Sitio. Esta notificación deberá efectuarse a través del Sitio y, adicionalmente, remitiendo una nota al domicilio de NaviStore debiendo especificar en ambos casos y en detalle toda la información con la que cuente respecto del uso no autorizado de su contraseña.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer bg-timberwolf">
+        <div class="container py-3">
+            <div class="row">
+                <div class="input-group">
+                    <span class="fw-bold d-flex align-items-center input-group-text bg-imperial-red text-white d-none d-md-block">Enterate de las mejores ofertas</span>
+                    <input type="email" class="form-control" placeholder="ingresa tu email" aria-label="ingresa tu email" aria-describedby="button-addon2">
+                    <button class="btn btn-secondary input-group-text" type="button" id="button-addon2">Suscríbete ahora</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h2 class="fw-bold my-3">NaviStore</h2>
+                    <ul class="menu gap-2 d-flex flex-column ps-0">
+                        <li><a class="d-inline-block" href="acerca-de.html" title="Acerca de">Acerca de</a></li>
+                        <li><a class="d-inline-block" href="terminos-condiciones.html" title="Terminos y condiciones">Términos y condiciones</a></li>
+                        <li><a class="d-inline-block" href="trabaja-con-nosotros.html" title="Trabaja con nosotros">Trabaja con nosotros</a></li>
+                        <li><a class="d-inline-block" href="proveedores.html" title="Registrate como proveedor">Regístrate como proveedor</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2 class="fw-bold my-3">Servicios</h2>
+                    <ul class="menu gap-2 d-flex flex-column ps-0">
+                        <li><a class="d-inline-block" href="creditos.html" title="Creditos">Créditos</a></li>
+                        <li><a class="d-inline-block" href="ventas-corporativas.html" title="Ventas corporativas">Ventas corporativas</a></li>
+                        <li><a class="d-inline-block" href="post-venta.html" title="Post venta">Post venta</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2 class="fw-bold my-3">Ayuda</h2>
+                    <ul class="menu gap-2 d-flex flex-column ps-0">
+                        <li><a class="d-inline-block" href="sucursales.html" title="Sucursales">Sucursales</a></li>
+                        <li><a class="d-inline-block" href="preguntas-frecuentes.html" title="Preguntas frecuentes">Preguntas frecuentes</a></li>
+                        <li><a class="d-inline-block" href="planes-ahora.html" title="Planes ahora">Planes ahora</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h2 class="fw-bold my-3">Eventos especiales</h2>
+                    <ul class="menu gap-2 d-flex flex-column ps-0">
+                        <li><a class="d-inline-block" href="https://www.hotsale.com.ar/" target="_blank" rel="noopener" title="Hot Sale">Hot Sale</a></li>
+                        <li><a class="d-inline-block" href="https://cybermonday.global/es-ar/" target="_blank" rel="noopener" title="Cyber Monday">Cyber Monday</a></li>
+                        <li><a class="d-inline-block" href="https://www.electrofans.com.ar/" target="_blank" rel="noopener" title="Electro Fans">Electro Fans</a></li>
+                        <li><a class="d-inline-block" href="https://blackfriday.com/" target="_blank" rel="noopener" title="Black Friday">Black Friday</a></li>
+                    </ul>
+                </div>
+                <ul class="social-icons mt-3 col-md-1 d-flex flex-md-column justify-content-between align-items-md-end">
+                    <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener" title="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg></a></li>
+                    <li><a href="https://twitter.com/home" target="_blank" rel="noopener" title="twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.google.com.ar/webhp" target="_blank" rel="noopener" title="google">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" title="youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between">
+            <p class="fw-bold">Copyright © NaviStore 2023. All right reserved.</p>
+            <ul class="d-inline-flex gap-3">
+                <li><i class="fa fa-cc-visa"></i></li>
+                <li><i class="fa fa-cc-mastercard"></i></li>
+                <li><i class="fa fa-cc-amex"></i></li>
+                <li><i class="fa fa-cc-paypal"></i></li>
+            </ul> 
+        </div>
+    </footer>  
+</body>
+</html>

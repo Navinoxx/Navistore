@@ -1,0 +1,43 @@
+@import "../componentes/button";
+@import "../colores";
+
+.footer {
+
+    .menu {
+        @include button-1;
+
+        color: $silver;
+
+        & a:hover {
+            color: $eerie-black;
+        }
+
+    }
+    
+    .social-icons {
+        .bi {
+            width: 1.5rem;
+            
+            &:hover {
+                scale: 1.1;
+                transition: all 0.5s ease;
+            }
+
+            &-facebook:hover, &-twitter:hover {
+                color: $blue;
+                filter: drop-shadow(0px 0px 15px $blue);
+            }
+
+            &-youtube:hover, &-google:hover {
+                color: $imperial-red;
+                filter: drop-shadow(0px 0px 15px $imperial-red);
+            }
+        }
+    }
+
+    .copyright {
+        border-top: 1px solid $eerie-black;
+        padding-top: 1rem;
+    }
+}
+

@@ -1,0 +1,57 @@
+@import "../tipografia";
+
+.card_full {
+    justify-content: space-between;
+    padding: 0;
+
+    .card-left {
+        width: auto;
+
+        .card-title {
+            font-size: 2.5em;
+            font-family: $fuente-principal;
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+        }
+
+        .card-brand {
+            font-size: 1.5em;
+        }
+
+        .card-description {
+            font-size: 1.5em;
+        }
+
+        .bi-heart-fill {
+            pointer-events: stroke;
+            transition: transform 0.1s ease;
+
+            &:active {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+
+    .card-right {
+        width: 25rem;
+        height: 20rem;
+        
+        @media (max-width: 1199px) {
+            margin: auto;
+            width: 20rem;
+        }
+
+        .effect {
+            @include button-2; 
+                button.learn-more {
+                    width: 16rem;
+            } 
+        }
+
+        .ofert {
+            font-size: 1.2em;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
