@@ -17,9 +17,9 @@ The store uses the DummyJSON API to generate sample data that is used to display
 ## Installation
 
 1. Clone this repository to your local machine using the following command: 
-
+```ts
 git clone https://github.com/your-username/navistore.git
-
+```
 2. Open the `index.html` file in your web browser.
 
 3. Explore and customize Navistore to your liking!
